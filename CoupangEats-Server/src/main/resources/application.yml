@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo
+
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://stelladb.cqmtgsqbz7bk.ap-northeast-2.rds.amazonaws.com/Coupang-eats
+    # url 형식은 jdbc:mysql://RDS의 EndPoint/내부 DB 스키마명 입니다.
+    username: stella
+    password: 201732134
+    driver-class-name: com.mysql.cj.jdbc.Driver

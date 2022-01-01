@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp">
+
+    <FrameLayout
+        android:id="@+id/item_restaurant_coverImg_frm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_restaurant_coverImg_cardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp" >
+
+            <ImageView
+                android:id="@+id/item_restaurant_coverImg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burgertemp2"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/item_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="식당 이름"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_restaurant_coverImg_frm"/>
+
+    <ImageView
+        android:id="@+id/item_restaurant_star_iv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/star"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_restaurant_name" />
+
+    <TextView
+        android:id="@+id/item_restaurant_review_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0 (1) · 2.0km"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/item_restaurant_star_iv"
+        app:layout_constraintTop_toBottomOf="@id/item_restaurant_name"/>
+
+    <TextView
+        android:id="@+id/item_restaurant_deliverMoney_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배달비 2000원"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/item_restaurant_star_iv"
+        app:layout_constraintTop_toBottomOf="@id/item_restaurant_star_iv"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
